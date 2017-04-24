@@ -108,10 +108,12 @@ public class ArticleDetailFragment extends Fragment implements
 
         final AppCompatActivity activity = (AppCompatActivity) getActivity();
 
+
+
         Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.detail_toolbar);
         activity.setSupportActionBar(toolbar);
         activity.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        activity.getSupportActionBar().setDisplayShowTitleEnabled(false);
+        activity.getSupportActionBar().setDisplayShowTitleEnabled(true);
 
             toolbar.setNavigationOnClickListener(new View.OnClickListener() {
                 @Override
